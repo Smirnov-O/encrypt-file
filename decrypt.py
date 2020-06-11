@@ -2,7 +2,6 @@ from Crypto.PublicKey import RSA
 from Crypto.Random import get_random_bytes
 from Crypto.Cipher import AES, PKCS1_OAEP
 from termcolor import colored
-import config
 import sys
 import os
 
@@ -29,4 +28,4 @@ def walk(dir):
         if os.path.isfile(path): decrypt(path)
         else: walk(path)
 
-walk(config.PATH)
+walk(os.getenv("CRYPT_PAHT"))

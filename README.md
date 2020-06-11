@@ -11,8 +11,7 @@ python3 key-gen.py
 
 Path to folder for encrypt/decrypt
 ~~~bash
-vim config.py
-	PATH="FULL-PATH-TO-FLODER"
+export CRYPT_PAHT="FULL-PATH-TO-FLODER" # exemple: /root/crypt-path
 ~~~
 
 Encrypt all files in folder
